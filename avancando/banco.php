@@ -23,6 +23,8 @@ $contasCorrentes['123.456.789-11'] = sacar($contasCorrentes['123.456.789-11'], 2
 
 $contasCorrentes['123.256.789-12'] = depositar($contasCorrentes['123.256.789-12'], 900);
 
+titularComLetrasMaiusculas($contasCorrentes['123.256.789-12']);
+
 
 foreach ($contasCorrentes as $cpf => $conta) {
     exibeMensagem(
